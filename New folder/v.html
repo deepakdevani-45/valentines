@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine's Day!</title>
+<style>
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9e6e6; /* Light pink */
+    text-align: center;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    color: #d33f49; /* Red */
+  }
+  p {
+    color: #333;
+    font-size: 18px;
+  }
+  img {
+    max-width: 15rem;
+    border-radius: 25%;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+  }
+  .heart {
+    color: #d33f49; /* Red */
+    animation: pulse 1s infinite alternate; /* Heartbeat animation */
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Happy Valentine's Day!</h1>
+  <p>To the most wonderful person in my life,</p>
+  <!-- Original image -->
+  <img id="girlfriend-img" src="heart.png" alt="Your Girlfriend's Name" onmouseover="changeImage()" onmouseout="restoreImage()">
+  <p>My love for you is as boundless as the ocean and as timeless as the universe.</p>
+  <p>You mean everything to me, and I'm grateful for every moment we share together.</p>
+  <p>Wishing you a day filled with all the love and happiness you deserve.</p>
+  <p><span class="heart">❤️</span></p>
+</div>
+
+<script>
+  // JavaScript functions to change and restore image on hover
+  function changeImage() {
+    document.getElementById("girlfriend-img").src = "Nikku pic.jpg"; // Replace with new image filename
+  }
+  
+  function restoreImage() {
+    document.getElementById("girlfriend-img").src = "heart.png"; // Restore original image
+  }
+</script>
+
+</body>
+</html>
